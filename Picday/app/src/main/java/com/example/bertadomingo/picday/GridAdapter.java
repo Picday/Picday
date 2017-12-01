@@ -12,7 +12,25 @@ import android.widget.ImageView;
 public class GridAdapter extends BaseAdapter{
     private Context context;
 
-    public GridAdapter(Context context) {
+    public GridAdapter(Context c) {
+        context = c;
+    }
+
+    public int getCount() {
+        return mThumbIds.length;
+    }
+
+    public Object getItem(int position) {
+        return null;
+    }
+
+    public long getItemId(int position) {
+        return 0;
+    }
+
+/*
+
+   public GridAdapter(Context context) {
         this.context = context;
     }
 
@@ -27,7 +45,7 @@ public class GridAdapter extends BaseAdapter{
         return getItem(position).hashCode();
     }
 
-   /* @Override
+    @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
         if (view == null) {
             LayoutInflater inflater = (LayoutInflater) context
@@ -41,7 +59,11 @@ public class GridAdapter extends BaseAdapter{
         imagen.setImageResource(item.getIdDrawable());
 
         return view;
-    }*/
+    }
+
+
+*/
+
 
    //d'aqui fins al final es una prova
    public View getView(int position, View convertView, ViewGroup parent) {
