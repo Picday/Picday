@@ -26,11 +26,14 @@ public class Foto {
     }
 
     public static Foto[] ITEMS = {
-        new Foto("Imagen1", R.mipmap.ic_launcher),
-        new Foto("Imagen2", R.mipmap.ic_launcher_round),
-        new Foto("Imagen3", R.mipmap.ic_launcher),
-        new Foto("Imagen4", R.mipmap.ic_launcher),
-        new Foto("Imagen5", R.mipmap.ic_launcher),
+        new Foto("Imagen1", R.drawable.sample_0),
+        new Foto("Imagen2", R.drawable.sample_0),
+        new Foto("Imagen3", R.drawable.sample_0),
+        new Foto("Imagen4", R.drawable.sample_0),
+        new Foto("Imagen5", R.drawable.sample_0),
+        new Foto("Imagen1", R.drawable.sample_0),
+        new Foto("Imagen1", R.drawable.sample_0),
+        new Foto("Imagen1", R.drawable.sample_0)
     };
 
     public Foto getItem(int id) {

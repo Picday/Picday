@@ -17,8 +17,7 @@ public class PicdayActivity extends AppCompatActivity{
         setContentView(R.layout.activity_picday);
 
         gridView = (GridView) findViewById(R.id.id_gridview);
-        adaptador = new GridAdapter(this);
-        gridView.setAdapter(adaptador);
+        gridView.setAdapter(new GridAdapter(this));
 
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
            public void onItemClick(AdapterView<?> parent, View v,
